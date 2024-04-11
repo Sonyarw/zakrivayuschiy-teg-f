@@ -1,1 +1,19 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --color-font: #000;
+  --bg-color: #fff;
+  --bg-image: url('../images/background.png'), repeating-linear-gradient(to left, #d3d3d3 , transparent 2px),
+  repeating-linear-gradient(to top, #e7e7e7 0.01%, #1a1a1a 2px);
+  --main-font: 'Inter', sans-serif;
+  --ac-font: 'PressStart2P', sans-serif;
+  --font-w-h: 700;
+  --font-w-p: 400;
+  --border: #000;
+  --text-shadow: #fff;
+  --button-text: #fff;
+  --sparks: #FF0000;
+  --contour: #000;
+  --font-weight: 700;
+}
+
+
