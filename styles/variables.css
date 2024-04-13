@@ -1,19 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --color-font: #00cc14;
-    --background-color: #000;
-    --background-image: url("../images/background.dark.png"),
-      repeating-linear-gradient(to left, #000, transparent 2px),
-      repeating-linear-gradient(to top, #007f0c 0.01%, #004306 2px);
-    --main-font: "Inter", sans-serif;
-    --accent-font: "PressStart2P", Impact, sans-serif;
-    --border: #00cc14;
-    --text-shadow: #000;
-    --button-text: #00cc14;
-    --sparks: #ff0000;
-    --contour: #00cc14;
-    --font-weight: 785;
-    --font-variation-settings: "wght" 456;
+  --background-color: #000;
+  --background-image: url("../images/background.dark.png"),
+    repeating-linear-gradient(to left, #000, transparent 2px),
+    repeating-linear-gradient(to top, #007f0c 0.01%, #004306 2px);
+  --main-font: "Inter", sans-serif;
+  --accent-font: "PressStart2P", Impact, sans-serif;
+  --border: #00cc14;
+  --text-shadow: #000;
+  --button-text: #00cc14;
+  --sparks: #ff0000;
+  --contour: #00cc14;
+  --font-weight: 785;
+  --font-variation-settings: "wght" 456;
 }
-
-
