@@ -11,16 +11,15 @@
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/animations.css" />
   <link rel="stylesheet" href="./styles/themes.css" />
-  <link rel="icon" href="svg\favicon.ico" sizes="any">
-  <link rel="icon" href="svg\favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="svg\favicon.png">
+  <link rel="icon" href="svg/favicon.ico" sizes="any">
+  <link rel="icon" href="svg/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="svg/favicon.png">
   <script src="./scripts/set-theme.js"></script>
 </head>
 <body class="page">
   <header class="header">
-    <div class="header__content">
-      <h1 class="title">&lt;/HTML&gt;</h1>
-      <h2 class="caption">закрывающий тег</h2>
+      <a href="#" class="header-link">&lt;/HTML&gt;</a>
+      <h1 class="title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -41,23 +40,24 @@
           </li>
         </ul>
       </nav>
-    </div>
   </header>
   <main class="main">
-    <div class="card">
-      <h3 class="subject">Фритрек и нулевой спринт: Подготовка к работе</h3>
-      <div class="card-main">
-        <p class="card-subject">Радость</p>
+    <article class="card">
+      <h2 class="card-subject">Фритрек и нулевой спринт: Подготовка к работе</h2>
+      <div class="card-wrapper">
+        <span class="card-wrapper-subject">Радость</span>
         <img loading="lazy" src="./images/one.jpg" alt="Веселая Мейбл." class="card-img img-happy" />
       </div>
       <div class="card-text">
         <p class="text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на
           учёбу. И, возможно,
           подумать, как новые знания могут повлиять на ваше будущее.</p>
-        <p class="text">В самом начале, я была очень рада.</p>
+        <p>В самом начале, я была очень рада.</p>
         <div class="main-button">
           <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+            <svg class="like-icon" 
+              viewBox="0 0 39 36" 
+              fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path class="contour"
@@ -75,14 +75,14 @@
                 fill="var(--sparks)" />
             </svg>
           </button>
-          <button class="card__like-button button-animation"><span class="button__text">Like</span></button>
+          <button class="card__like-button button-animation" aria-labelledby="label-button-happy" type="button"><span class="button__text" id="label-button-happy">Like</span></button>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <h3 class="subject">1 спринт: Я — чистый лист</h3>
-      <div class="card-main">
-        <p class="card-subject">Сомнение</p>
+    </article>
+    <article class="card">
+      <h2 class="card-subject">1 спринт: Я — чистый лист</h2>
+      <div class="card-wrapper">
+        <span class="card-wrapper-subject">Сомнение</span>
         <img loading="lazy" src="./images/strah.webp" alt="Скубиду со своими друзьями." class="card-img img-doubt" />
       </div>
       <div class="card-text">
@@ -91,10 +91,12 @@
           чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением скрываются
           более
           глубокие вопросы: с чего начать? а вдруг будет слишком сложно? что, если я не справлюсь?</p>
-        <p class="text">Боялась, что не получится, но не так сильно как на картинке.</p>
+        <p>Боялась, что не получится, но не так сильно как на картинке.</p>
         <div class="main-button">
           <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+            <svg class="like-icon" 
+              viewBox="0 0 39 36" 
+              fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path class="contour"
@@ -112,14 +114,14 @@
                 fill="var(--sparks)" />
             </svg>
           </button>
-          <button class="card__like-button button-animation"><span class="button__text">Like</span></button>
+          <button class="card__like-button button-animation" aria-labelledby="label-button-doubt" type="button"><span class="button__text" id="label-button-doubt">Like</span></button>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <h3 class="subject">1 спринт: А если не получится?</h3>
-      <div class="card-main">
-        <p class="card-subject">Предвкушение</p>
+    </article>
+    <article class="card">
+      <h2 class="card-subject">1 спринт: А если не получится?</h2>
+      <div class="card-wrapper">
+        <span class="card-wrapper-subject">Предвкушение</span>
         <img loading="lazy" src="./images/two.jpg" alt="Яркая иллюстрация заката в горах."
           class="card-img img-expectation" />
       </div>
@@ -127,10 +129,12 @@
         <p class="text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и
           смениться ожиданием провала.
           Или вы, наоборот, могли вдохновиться успехами и поверить в себя..</p>
-        <p class="text">У меня получилось сдать проект, я была счастлива и ждала, что же будет дальше.</p>
+        <p>У меня получилось сдать проект, я была счастлива и ждала, что же будет дальше.</p>
         <div class="main-button">
           <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+            <svg class="like-icon"  
+              viewBox="0 0 39 36" 
+              fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path class="contour"
@@ -148,19 +152,19 @@
                 fill="var(--sparks)" />
             </svg>
           </button>
-          <button class="card__like-button button-animation"><span class="button__text">Like</span></button>
+          <button class="card__like-button button-animation" aria-labelledby="label-button-expectation" type="button"><span class="button__text" id="label-button-expectation">Like</span></button>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <h3 class="subject">2 спринт: Погоня за идеалом</h3>
-      <div class="card-main">
-        <p class="card-subject">Радость</p>
+    </article>
+    <article class="card">
+      <h2 class="card-subject">2 спринт: Погоня за идеалом</h2>
+      <div class="card-wrapper">
+        <span class="card-wrapper-subject">Радость</span>
         <img loading="lazy" src="./images/radost.jpg" alt="Яркая иллюстрация заката в горах."
           class="card-img img-joy" />
       </div>
       <div class="card-text">
-        <p class="text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё
+        <p>На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё
           впереди. Вы могли попытаться
           погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены перфекционизму и вместо
           того, чтобы
@@ -169,7 +173,9 @@
           рада Гарри приехавший в первый раз в Хогвартс и уверенность росла.</p>
         <div class="main-button">
           <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+            <svg class="like-icon"  
+              viewBox="0 0 39 36" 
+              fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path class="contour"
@@ -187,18 +193,19 @@
                 fill="var(--sparks)" />
             </svg>
           </button>
-          <button class="card__like-button button-animation"><span class="button__text">Like</span></button>
+          <button class="card__like-button button-animation" aria-labelledby="label-button-joy" 
+          type="button"><span class="button__text" id="label-button-joy">Like</span></button>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <h3 class="subject">2 спринт: О тех, кто рядом</h3>
-      <div class="card-main">
-        <p class="card-subject">А?</p>
+    </article>
+    <article class="card">
+      <h2 class="card-subject">2 спринт: О тех, кто рядом</h2>
+      <div class="card-wrapper">
+        <span class="card-wrapper-subject">А?</span>
         <img loading="lazy" src="./images/ron.jpg" alt="Друзья." class="card-img img-loneliness" />
       </div>
       <div class="card-text">
-        <p class="text">Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого
+        <p>Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого
           мира). Вас окружали
           одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться, если очередной макет
           просто так
@@ -207,7 +214,8 @@
           Рону, который стоит с таким лицом, хотя рядом друзья.</p>
         <div class="main-button">
           <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+            <svg class="like-icon"  
+              viewBox="0 0 39 36" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path class="contour"
@@ -225,25 +233,27 @@
                 fill="var(--sparks)" />
             </svg>
           </button>
-          <button class="card__like-button button-animation"><span class="button__text">Like</span></button>
+          <button class="card__like-button button-animation" aria-labelledby="label-button-loneliness" type="button"><span class="button__text" id="label-button-loneliness">Like</span></button>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <h3 class="subject">3 спринт: Обходные стратегии</h3>
-      <div class="card-main">
-        <p class="card-subject">Туго</p>
+    </article>
+    <article class="card">
+      <h2 class="card-subject">3 спринт: Обходные стратегии</h2>
+      <div class="card-wrapper">
+        <span class="card-wrapper-subject">Туго</span>
         <img loading="lazy" src="./images/germiona.avif" alt="Учеба." class="card-img img-hard" />
       </div>
       <div class="card-text">
         <p class="text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что
           решения просто иссякли.
           Значит, пришло время посмотреть на задачу под другим углом.</p>
-        <p class="text">Ооо третий спринт, адаптивная верстка и так не вовремя, на работе завал, ничего не успеваю,
+        <p>Ооо третий спринт, адаптивная верстка и так не вовремя, на работе завал, ничего не успеваю,
           стресс и в последствии выгорание (хотя сейчас понимаю ничего сложного и нет). </p>
         <div class="main-button">
           <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+            <svg class="like-icon" 
+              viewBox="0 0 39 36" 
+              fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path class="contour"
@@ -261,14 +271,14 @@
                 fill="var(--sparks)" />
             </svg>
           </button>
-          <button class="card__like-button button-animation"><span class="button__text">Like</span></button>
+          <button class="card__like-button button-animation" aria-labelledby="label-button-hard" type="button"><span class="button__text" id="label-button-hard">Like</span></button>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <h3 class="subject">3 спринт: Когда опускаются руки</h3>
-      <div class="card-main">
-        <p class="card-subject">Выгорание</p>
+    </article>
+    <article class="card">
+      <h2 class="card-subject">3 спринт: Когда опускаются руки</h2>
+      <div class="card-wrapper">
+        <span class="card-wrapper-subject">Выгорание</span>
         <img loading="lazy" src="./images/seven.jpg" alt="Мейбл у ,которой опустились руки."
           class="card-img img-devastation" />
       </div>
@@ -278,11 +288,13 @@
           хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты очень нужна
           концентрация.
           Вспомните, откуда вы её черпали.</p>
-        <p class="text">Тут случилось очень сильное выгорание из-за, которого пришлось перейти в другую когорту,
+        <p>Тут случилось очень сильное выгорание из-за, которого пришлось перейти в другую когорту,
           аааааааа.</p>
         <div class="main-button">
           <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+            <svg class="like-icon"  
+              viewBox="0 0 39 36" 
+              fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path class="contour"
@@ -300,18 +312,18 @@
                 fill="var(--sparks)" />
             </svg>
           </button>
-          <button class="card__like-button button-animation"><span class="button__text">Like</span></button>
+          <button class="card__like-button button-animation" aria-labelledby="label-button-devastation" type="button"><span class="button__text" id="label-button-devastation">Like<span></button>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <h3 class="subject">«Сейчас я здесь»</h3>
-      <div class="card-main">
-        <p class="card-subject">Вроде</p>
+    </article>
+    <article class="card">
+      <h2 class="card-subject">«Сейчас я здесь»</h2>
+      <div class="card-wrapper">
+        <span class="card-wrapper-subject">Вроде</span>
         <img loading="lazy" src="./images/radost1.jpg" alt="Радость." class="card-img img-hesitation" />
       </div>
       <div class="card-text">
-        <p class="text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много
+        <p>Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много
           материала про
           «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир
           постоянно
@@ -322,7 +334,9 @@
           когорту, но загадывать нельзя.</p>
         <div class="main-button">
           <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+            <svg class="like-icon"  
+              viewBox="0 0 39 36" 
+              fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path class="contour"
@@ -340,30 +354,32 @@
                 fill="var(--sparks)" />
             </svg>
           </button>
-          <button class="card__like-button button-animation"><span class="button__text">Like</span></button>
+          <button class="card__like-button button-animation" aria-labelledby="label-button-hesitation" type="button"><span class="button__text" id="label-button-hesitation">Like</span></button>
         </div>
       </div>
-    </div>
+    </article>
   </main>
   <footer class="footer">
-    <button class="footer-button button-animation" type="button" onclick="window['dialog-id'].showModal();"
+    <button class="footer-button button-animation" 
+      type="button" 
+      onclick="window['dialog-id'].showModal();"
       aria-controls="dialog-id">
-      <svg class="floppy" viewBox="0 0 24 24" width="27" height="24" fill="var(--button-text)">
-        <use href="svg/floppy.svg#floppy">
-      </svg>
-      <span class="button__text">Сохранить на память</span>
+        <svg class="floppy" viewBox="0 0 24 24" width="27" height="24" fill="var(--button-text)">
+          <use href="svg/floppy.svg#floppy"></use>
+        </svg>
+          <span class="button__text">Сохранить на память</span>
     </button>
   </footer>
   <dialog class="dialog" id="dialog-id">
     <div class="dialog-wrapper">
       <svg class="dialog-floppy" viewBox="0 0 24 24" width="39" height="39" fill="var(--button-text)">
-        <use href="svg/floppy.svg#floppy">
+        <use href="svg/floppy.svg#floppy"></use>
       </svg>
-      <h4 class="dialog-subject">Вставьте
-        дискету, чтобы продолжить</h4>
+      <p class="dialog-subject">Вставьте
+        дискету, чтобы продолжить</p>
     </div>
     <form method="dialog">
-      <button class="close-button" type="submit"><span class="button__text">Ок</span></button>
+      <button class="close-button button-animation" type="submit"><span class="button__text">Ок</span></button>
     </form>
   </dialog>
   <script src="./scripts/like.js"></script>
