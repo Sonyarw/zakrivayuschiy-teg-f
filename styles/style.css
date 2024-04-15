@@ -24,7 +24,7 @@
   background-attachment: fixed;
   background-position: center;
   font-family: var(--main-font);
-  font-variation-settings: var(--font-variation-settings);
+  font-variation-settings: var(--font-variation-weight);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@
 }
 
 .header {
-  font-family: var(--accent-font), Impact, sans-serif;
+  font-family: var(--accent-font), Impact, fantasy;
   margin-block-start: 100px;
   width: 100%;
   background-color: var(--background-color);
@@ -67,6 +67,7 @@
   gap: 11px;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 18px;
 }
 
 .theme-menu__button {
@@ -84,6 +85,11 @@
   opacity: 0.6;
   transition: opacity 0.3s ease;
   outline: none;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
 }
 
 .theme-menu__button:disabled {
@@ -113,19 +119,13 @@
   transform-origin: left;
 }
 
-.theme-menu__button:hover::after {
-  transform: scaleX(1);
-}
-
 .theme-menu__button:focus-visible::after {
   transform: scaleX(1);
 }
 
 .theme-menu__button:hover {
-  color: currentColor;
   opacity: 0.6;
   transition: opacity 0.3s ease;
-  cursor: pointer;
 }
 
 .main {
@@ -149,7 +149,7 @@
   line-height: 1.2;
   padding: 3px 24px 3px 10px;
   font-size: 18px;
-  font-variation-settings: var(--font-variation-settings);
+  font-weight: var(--font-weight);
 }
 
 .card-wrapper {
@@ -173,7 +173,7 @@
   z-index: 2;
   font-size: 14px;
   color: var(--color-font);
-  font-family: var(--accent-font), Impact, sans-serif;
+  font-family: var(--accent-font), Impact, fantasy;
   mix-blend-mode: hard-light;
   text-shadow: -1px 0 var(--text-shadow), 0 1px var(--text-shadow),
     1px 0 var(--text-shadow), 0 -1px var(--text-shadow);
@@ -231,6 +231,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  line-height: 1.17;
 }
 
 .main-button {
@@ -254,8 +255,6 @@
   height: 37px;
   transform-origin: center;
   cursor: pointer;
-  animation: like 0.3s ease-in normal 0.1s forwards;
-  transform-origin: center;
 }
 
 .card__icon-button:focus-visible {
@@ -286,7 +285,7 @@
 
 .like-icon:active .main-body {
   fill: var(--sparks);
-  transition: fill 0.03s linear 0.03s;
+  transition: fill 0.03s linear 0.05s;
 }
 
 .like-icon:active .core {
@@ -296,12 +295,12 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--sparks);
-  transition: fill 0.3s linear 0.03s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--sparks);
-  transition: fill 0.3s linear 1;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .contour {
@@ -315,12 +314,11 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: like 0.3s ease-in normal 0.1s forwards;
-  transform-origin: center;
+  animation: like 0.3s ease-in normal 0.1s 1;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s ease-in 0.3s normal 1;
+  animation: sparks 0.3s ease-in reverse 0.3s;
 }
 
 .card__like-button {
@@ -338,12 +336,11 @@
   cursor: pointer;
   transition: box-shadow 0.3s ease;
   background-color: var(--background-color);
-  transition: box-shadow 0.3s ease;
 }
 
 .button-animation:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--border);
-  outline: 2px solid var(--border);
+  outline: none;
 }
 
 .button-animation::after {
@@ -376,7 +373,7 @@
 }
 
 .button__text {
-  font-family: "PressStart2P", sans-serif;
+  font-family: var(--accent-font), Impact, fantasy;
   font-size: 14px;
   position: relative;
   z-index: 10;
@@ -389,6 +386,13 @@
   position: relative;
   z-index: 10;
   mix-blend-mode: difference;
+  width: 27px;
+  height: 24px;
+}
+
+.dialog-floppy {
+  width: 39px;
+  height: 39px;
 }
 
 .dialog::backdrop {

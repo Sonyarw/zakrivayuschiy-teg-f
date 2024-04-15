@@ -8,12 +8,12 @@
 
 @font-face {
   font-display: swap;
-  font-family: 'Inter-Variable';
+  font-family: 'Inter';
   src:
     local('Inter-Variable'),
     url('../Inter-Variable.woff2') format('woff2 supports variations'),
         url('../Inter-Variable.woff2') format('woff2-variations');
-        font-weight: 400 456 700 785;
+        font-weight: 400 785;
 }
 
 
